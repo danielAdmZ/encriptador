@@ -1,0 +1,224 @@
+*{
+    margin:  0;
+    font-family: "Eczar", serif;
+    
+}
+body{
+    background-color: #dee6e1;
+}
+/* Menu superior */
+.menu-above{
+    padding: 0.7rem;
+    background-color: #eefdf3;
+}
+/* Contenedor de ambos lados */
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+/* Seccion de donde se recibe el mensaje */
+.seccion-copy{
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem 4rem;
+    width: 20rem;
+    height: 45rem;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    margin: 1rem 1rem;
+    background-color: #dff9e8;
+    border-radius: 1.5rem;
+    box-shadow: -1rem 0.6rem 1.6rem #00000029;
+}
+.seccion-copy h2{
+    font-family: "Protest Riot", sans-serif;
+    color: #5c8168;
+    font-size: 1.8rem;
+ }
+.seccion-copy p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #1f2c23;
+    font-weight: 600;
+
+}
+
+/* SECCION DONDE SE ESCRIBE EL TEXTO */
+.seccion-text{
+    
+    width: 80rem;
+    height: auto;
+    display: grid;
+    justify-items: center;
+}
+.text-area textarea{
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: #dbe3de;
+    border: none;
+    max-height: 629px;
+    max-width: 1199px;
+    color: #5c8168;
+    text-decoration: none;
+}
+
+.text-button{
+    margin-top: 2rem;
+} 
+.text-button button, .seccion-copy button{
+    padding: 1rem 7rem;
+    color: #5c8168;
+    margin: 1rem;
+    background-color: #dff9e8;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: "Protest Riot", sans-serif;
+    border-radius: 1rem;
+    border-color: #474f4a;
+    transition: all 0.5s;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+}
+.text-button button#desencriptar{
+    background-color: #93a499;
+    color: #474f4a;
+}
+.text-button h4{
+    color: #5c8168;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+button#encriptar:hover{
+    background-color: #1f2c23;
+    cursor: pointer;
+}
+button#encriptar:active{
+    background-color: #4fc818;
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+/* ----------------------FOOTER---------------------- */
+footer{
+    background-color: #C9E0D1;
+    display: grid;
+    justify-items: center;
+    color: #5c8168;
+    font-size: 1.3rem;
+}
+.redes-sociales{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+footer h2{
+    font-size: 1.3rem;
+    margin:  0 1rem;
+    
+}
+footer i {
+    margin: 0 0.3rem;
+}
+.redes-sociales a{
+    color: #5c8168;
+    text-decoration: none;
+}
+
+    
+
+
+
+/* Complementos */
+.seccion-copy button{
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem 7rem;
+}
+#invisible{
+ display: none;   
+}
+.seccion-copy button#visible{
+    display: grid;   
+}
+/* SECCION DE RESPONSIVA */
+
+@media screen and (max-width:1660px) {
+    .text-area textarea{
+       width: 90%;
+    }
+    .seccion-text{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width:1194px) {
+    .text-button{
+            justify-items: stretch;
+            display: grid;
+    }
+    .seccion-copy button{
+        margin:0 ;
+        margin-top: 2rem;
+        padding: 1rem 4rem;
+    }
+}
+
+@media screen and (max-width:1026px) {
+    .seccion-copy img.copy {
+        width: 70%;
+        height: 90%;
+    }
+    .seccion-copy{
+        overflow: scroll;
+        width:25%;
+        height: 40rem;
+    }
+}
+
+@media screen and (max-width:779px) {
+    .container{
+        display: grid;
+        justify-items: center;
+    }
+    .text-area textarea{
+        width: 100%;
+     }
+     .seccion-text{
+         width: 100%;
+     }
+     .seccion-copy{
+        overflow: scroll;
+        width:60%;
+        height: 30rem;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .text-button h4{
+        font-size: 0.8rem;
+    }
+    .text-button button{
+        margin-top: 1rem;
+        padding: 1rem 1rem;
+    }
+    .seccion-copy{
+        width: 11rem;
+        margin: 0;
+    }
+    .redes-sociales{
+        margin: 0;
+        padding: 1rem;
+        font-size: 1.2rem;
+        
+    }
+}
+
+@media screen and (max-width:350px) {
+    
+}

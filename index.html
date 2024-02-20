@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Encriptador Reto | Reto Daniel</title>
+</head>
+<body>
+    <header>
+    <!-- Seccion para agregar el menu superior con la imagen-->
+        <div class="menu-above">
+            <img src="img/Icono.png" alt="logo-menu" height="60rem" width="60rem">
+        </div>
+    </header>
+
+    <main>
+       
+        <div class="container">
+             <!-- Primera seccion donde se va a capturar el texto que se va encriptar, ademas que contiene la informacion
+              de los botones -->
+            <div class="seccion-text">
+                <div class="text-area">
+                    <textarea name="text-encriptar" id="text-encrip" cols="80" rows="10"> Ingresa el texto aquí</textarea>
+                </div>
+                <div class="text-button">
+                    <h4><i class="bi bi-info-circle-fill"> No se permite mayusculas y caractéres especiales</i> </h4>
+                    <button id="encriptar" onclick="encriptar()" >Encriptar</button>
+                    <button id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+               
+            </div>
+            <!-- En esta seccion esta la informacion acerca del resultado de la encriptacion ademas de un boton de copiar contenido -->
+            <div class="seccion-copy">
+                <img class="copy" src="img/Web search-bro.png" alt="ingresa-un-mensaje-para-desencriptar" height="300rem" width="320rem">
+                <h2 class="copy" id="copyclip">Ningún mensaje fue encontrado</h2>
+                <p id="text">Ingresa el texto que desees encriptar o desencriptar</p>
+                <button class="copy-button" id="" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+       
+    </main>
+
+    <footer>
+            
+             <div class="redes-sociales">
+                <h2>Daniel Jesus Vadillo Cocom | </h2>
+                <a href="https://twitter.com/DanVadCom"><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-github"></i></a>
+                
+                
+             </div>
+        <!-- <a href="https://storyset.com/online">Online illustrations by Storyset</a> -->
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
