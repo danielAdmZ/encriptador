@@ -4,4 +4,5 @@
 <p>
   El proyectó tomó aproximadamente 18hr de trabajo entre el Front y la lógica de programación, aunque llevó más trabajo el front.
   La lógica lo repartí en funciones para evitar repetir cierto codigo.
+  #challengeonecodificador6
 </p>
