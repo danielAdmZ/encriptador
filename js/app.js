@@ -1,6 +1,9 @@
-
-// console.log(resultado);
 // FUNCIONES PRINCIPALES 
+const letras = [
+    ["e","i","a","o","u"],
+    ["enter","imes","ai","ober","ufat"]
+];
+
 function encriptar(){
     hiddenT();
     let palabra = document.getElementById('text-encrip').value;
@@ -24,18 +27,14 @@ function newStr(texto, mode){
     switch (mode) {
      case 1:
          texto=texto.toLowerCase();
-         texto = texto.replaceAll("e", 'enter');
-         texto = texto.replaceAll("i", 'imes');
-         texto =texto.replaceAll("a",'ai');
-         texto= texto.replaceAll("o", 'ober');
-         texto= texto.replaceAll("u", 'ufat');
+         for (let index = 0; index < letras[0].length; index++) {
+            texto = texto.replaceAll(letras[0][index],letras[1][index]);
+         }
          break;
      case 0:
-         texto = texto.replaceAll("enter", 'e');
-         texto = texto.replaceAll("imes", 'i');
-         texto =texto.replaceAll("ai",'a');
-         texto= texto.replaceAll("ober", 'o');
-         texto= texto.replaceAll("ufat", 'u');
+        for (let index = 0; index < letras[0].length; index++) {
+            texto = texto.replaceAll(letras[1][index],letras[0][index]);
+         }
          break;
      default:
          break;
