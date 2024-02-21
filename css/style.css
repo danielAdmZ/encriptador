@@ -1,7 +1,7 @@
+/* Seccion General */
 *{
     margin:  0;
     font-family: "Eczar", serif;
-    
 }
 body{
     background-color: #dee6e1;
@@ -11,7 +11,7 @@ body{
     padding: 0.7rem;
     background-color: #eefdf3;
 }
-/* Contenedor de ambos lados */
+/*-----------Contenedor de ambos lados---------*/
 .container{
     display: flex;
     justify-content: space-around;
@@ -21,7 +21,7 @@ body{
 
 
 
-/* Seccion de donde se recibe el mensaje */
+/*----------------Seccion de donde se recibe el mensaje---------------------- */
 .seccion-copy{
     overflow: hidden;
     text-align: center;
@@ -49,7 +49,7 @@ body{
 
 }
 
-/* SECCION DONDE SE ESCRIBE EL TEXTO */
+/*-------------SECCION DONDE SE ESCRIBE EL TEXTO-------------------*/
 .seccion-text{
     
     width: 80rem;
@@ -123,16 +123,14 @@ footer h2{
 footer i {
     margin: 0 0.3rem;
 }
+footer i:hover{
+    color: #1f2c23;
+}
 .redes-sociales a{
     color: #5c8168;
     text-decoration: none;
 }
-
-    
-
-
-
-/* Complementos */
+/*-------------Complementos-------- */
 .seccion-copy button{
     display: none;
     margin-top: 2rem;
@@ -217,8 +215,13 @@ footer i {
         font-size: 1.2rem;
         
     }
+    .redes-sociales h2{
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width:350px) {
-    
+    .redes-sociales h2{
+        font-size: 0.8rem;
+    }
 }
