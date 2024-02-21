@@ -93,11 +93,11 @@ body{
     font-size: 0.9rem;
     font-weight: 300;
 }
-button#encriptar:hover{
+button#encriptar:hover, button#desencriptar:hover, .seccion-copy button#visible:hover{
     background-color: #1f2c23;
     cursor: pointer;
 }
-button#encriptar:active{
+button#encriptar:active, button#desencriptar:active, .seccion-copy button#visible:active{
     background-color: #4fc818;
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
